@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pet Crossword Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen" class="container">
+        <h1>Pet Crossword <span class="pro-tag">PRO</span></h1>
+        <p>Tema: Loja de Ração</p>
+        <div class="menu-buttons">
+            <button onclick="startGame()">JOGAR AGORA</button>
+        </div>
+    </div>
+
+    <div id="game-screen" class="container hidden">
+        <div class="game-header">
+            <button onclick="location.reload()" class="btn-mini">⬅ Menu</button>
+            <h2>CRUZADINHA</h2>
+        </div>
+
+        <div class="crossword-layout">
+            <div id="crossword-grid" class="grid-cross"></div>
+            
+            <div class="clues-container">
+                <h3>Dicas</h3>
+                <div id="clues-list"></div>
+            </div>
+        </div>
+        
+        <button onclick="checkWin()" class="btn-check">Verificar Respostas</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
